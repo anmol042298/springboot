@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Ubuntu";
+}
+
+canvas {
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    height: 80vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.container,
+.boxForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.outer {
+    min-width: 100vw;
+    min-height: 100vh;
+    /* background: rgb(204, 204, 255); */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(../assets/graph3.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50vw 35vh; */
+}
+
+.imgtopleft{
+    position: absolute;
+    left:6vw;
+    /* top:2vh; */
+    bottom:45vh;
+}
+.imag{
+    width: 20vw;
+    /* height: 0vh; */
+}
+.imgleft{
+    position: absolute;
+    left:7vw;
+    bottom: 0vh;
+}
+.ima{
+    position: absolute;
+    right:2vw;
+    top:2vw;
+    width:20vw;
+    height: 40vh;
+}
+.container {
+    min-width: 25em;
+    padding: 1.2em;
+    margin-top: 4vh;
+    border-radius: 20px;
+    background-color: rgb(34, 34, 34);
+    z-index: 10;
+}
+.container{
+    position: relative;
+    bottom: 1vh;
+}
+.title
+{
+    font-size: 5em;
+    font-weight: bolder;
+    margin-bottom: 1vh;
+}
+.boxForm {
+    box-sizing: border-box;
+    /* min-width: 24em; */
+    width: 37vw;
+    padding: 1.8em 1.1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 255);
+    /* background-color: transparent; */
+    flex-direction: column;
+    z-index: 10;
+}
+.outer{
+    position: relative;
+    bottom: 5vh;
+}
+.heading {
+    padding-top: 25px;
+    font-size: 1.5em;
+    /* color: rgb(68, 68, 68); */
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.breakLine {
+    min-width: 90%;
+    height: 2px;
+    background: linear-gradient(to right,
+            rgb(221, 221, 221) 43%,
+            transparent 43%,
+            transparent 57%,
+            rgb(221, 221, 221) 57%);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin: 1.3em;
+}
+
+.icon {
+    width: 5vw;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    display: flex;
+    margin: 1.1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+}
+
+.image {
+    height: 12vh;
+    width: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .boxForm {
+        order: 2;
+        min-width: 310px;
+    }
+}
